@@ -1,0 +1,17 @@
+# Chart.yaml
+apiVersion: v2
+name: webserver
+description: A Helm chart for Kubernetes
+type: application
+# Chart.yaml
+version: 0.3.2
+appVersion: "1.18.2"
+
+dependencies:
+- name: mongodb
+  version: "13.3.0"
+  repository: "https://charts.bitnami.com/bitnami"
+
+- name: mysql
+  version: "9.3.4"
+  repository: "https://charts.bitnami.com/bitnami"
